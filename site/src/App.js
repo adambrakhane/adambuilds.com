@@ -64,7 +64,7 @@ class App extends React.Component {
                     </Row>
                 </Container>
                 <Container
-                    w={{ xs: "90vw", sm: "60vw" }}
+                    w={{ xs: "90vw", md:"80vw", xl:"60vw" }}
                     justify="center"
                     align="center"
                     p={{ x: "1rem", y: "1rem" }}
@@ -74,8 +74,8 @@ class App extends React.Component {
                         Teams
                     </Text>
                     <Row>
-                        <ProjectCard title="Tovala" subtext="Director of Software engineering &mdash; 5th hire and 1st software engineer" image="./img/tovala.png" />
-                        <ProjectCard title="Akelos" subtext="Co-Founder and Board Member of Non-Profit building water systems worldwide" tags={["non-profit"]} image="./img/adam-spring.jpg" />
+                        <ProjectCard title="Tovala" subtext="Director of Software engineering &mdash; 5th hire and 1st software engineer" image="./img/tovala-logo-framed.png" link="https://tovala.com" />
+                        <ProjectCard title="Akelos" subtext="Co-Founder and Board Member of Non-Profit building water systems worldwide" tags={["non-profit"]} image="./img/adam-spring.jpg" link="https://akeloswater.org"/>
                         <ProjectCard title="BoHo" subtext="Board Member of a growing Chicago theatre company" tags={["past", "non-profit"]} image="./img/boho-show.jpg" link="https://www.facebook.com/bohotheatre" />
                         <ProjectCard title="ADEC/IRWA" subtext="Board Member and volunteer bringing clean water to thousands in rural Honduras" tags={["past", "non-profit"]} image="./img/adam-tank.jpg" />
                         <ProjectCard title="Dar Data" subtext="Founded IoT munucipality water system monitoring platform" tags={["past", "iot"]} image="./img/pressure-monitor.png" />
