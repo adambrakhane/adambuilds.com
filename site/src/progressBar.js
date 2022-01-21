@@ -11,7 +11,9 @@ class ProgressBar extends React.Component {
                 <Div
                     className="progress-bar"
                     shadow="4"
-                    style={{ float: "right" }}
+                    style={{
+                        float: "right"
+                    }}                    
                 >
                     <Div
                         className="text"

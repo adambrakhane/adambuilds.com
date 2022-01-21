@@ -20,7 +20,7 @@ class ProjectCard extends React.Component {
     mouseOut() {
         this.setState({ hover: false })
     }
-    
+
     clicked() {
         if (typeof this.props.link != "undefined") {
             window.open(this.props.link, '_blank');
@@ -96,13 +96,17 @@ class Tags extends React.Component {
 
         return (
             <Div d="flex" flexWrap="wrap" p="0.5rem">
-                {this.props.tags.map((name,i) => {
+                {this.props.tags.map((name, i) => {
                     var color = ""
                     var text = ""
                     switch (name) {
                         case "past":
                             color = "warning"
                             text = "Past"
+                            break;
+                        case "current":
+                            color = "success"
+                            text = "Current"
                             break;
                         case "non-profit":
                             color = "info"

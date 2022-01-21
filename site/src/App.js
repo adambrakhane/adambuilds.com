@@ -74,8 +74,9 @@ class App extends React.Component {
                         Teams
                     </Text>
                     <Row>
-                        <ProjectCard title="Tovala" subtext="Director of Software engineering &mdash; 5th hire and 1st software engineer" image="./img/tovala-logo-framed.png" link="https://tovala.com" />
-                        <ProjectCard title="Akelos" subtext="Co-Founder and Board Member of Non-Profit building water systems worldwide" tags={["non-profit"]} image="./img/adam-spring.jpg" link="https://akeloswater.org"/>
+                        <ProjectCard title="GatewayX" subtext="Lead Software Engineer &mdash; 1st engineer at a company building the future of DTC" tags={["current"]} image="./img/GatewayX_LogoMark_NavyGreen.png" link="https://www.gateway.xyz" />
+                        <ProjectCard title="Tovala" subtext="Director of Software engineering &mdash; 5th hire and 1st software engineer" tags={["past"]} image="./img/tovala-logo-framed.png" link="https://tovala.com" />
+                        <ProjectCard title="Akelos" subtext="Co-Founder and Board Member of Non-Profit building water systems worldwide" tags={["current","non-profit",]} image="./img/adam-spring.jpg" link="https://akeloswater.org"/>
                         <ProjectCard title="BoHo" subtext="Board Member of a growing Chicago theatre company" tags={["past", "non-profit"]} image="./img/boho-show.jpg" link="https://www.facebook.com/bohotheatre" />
                         <ProjectCard title="ADEC/IRWA" subtext="Board Member and volunteer bringing clean water to thousands in rural Honduras" tags={["past", "non-profit"]} image="./img/adam-tank.jpg" />
                         <ProjectCard title="Dar Data" subtext="Founded IoT munucipality water system monitoring platform" tags={["past", "iot"]} image="./img/pressure-monitor.png" />
@@ -89,7 +90,7 @@ class App extends React.Component {
                         <ProjectCard title="Tovala Oven" subtext="User experience and firmware engineering for a succussful Smart Oven" tags={["iot"]} image="./img/tovala-oven-gen2.jpg" />
                         <ProjectCard title="InvenStory" subtext="An online inventory management system for a non-profit that builds school libraries" tags={["non-profit"]} image="./img/invenstory.png" />
                         <ProjectCard title="Monpiche" subtext="A home monitoring system of self-built IoT modules & base stations" tags={["iot"]} image="./img/monpiche.png" />
-                        <ProjectCard title="Water Pressure Monitoring System" subtext="A network of devices deployed in Marcala, Honduras to diagnose issues witha  municipal water system" tags={["past", "non-profit", "iot"]} image="./img/datosdeadec.png" />
+                        <ProjectCard title="Water System Planning & Monitoring Tool" subtext="A network of devices deployed in Marcala, Honduras to diagnose issues witha  municipal water system" tags={["non-profit", "iot"]} image="./img/datosdeadec.png" />
                         <ProjectCard title="My Tovala and Me" subtext="A YouTube channel where I do interesting/stupid stuff with my Tovala oven" link="https://www.youtube.com/c/MyTovalaandMe" image="./img/my-tovala-and-me.png" />
                     </Row>
 
@@ -107,14 +108,15 @@ class App extends React.Component {
                                 Tech
                             </Text>
 
-                            <SkillBar name="Golang" value={100} label="Expert" align="right" bg="warning600" />
+                            <SkillBar name="Golang" value={100} label="Expert" align="right" bg="warning600"/>
                             <SkillBar name="HTML/CSS" value={65} label="Proficient" align="right" bg="warning600" />
                             <SkillBar name="JS" value={80} label="Proficient" align="right" bg="warning600" />
                             <SkillBar name="jQuery" value={70} label="Proficient" align="right" bg="warning600" />
-                            <SkillBar name="React" value={30} label="Learning" align="right" bg="warning600" />
-                            <SkillBar name="IoT/Electronics" value={90} label="Expert" align="right" bg="warning600" />
-                            <SkillBar name="AWS" value={50} label="Enough to be dangerous" align="right" bg="warning600" />
-                            <SkillBar name="Squirrel" value={70} label="Writing production code" align="right" bg="warning600" />
+                            <SkillBar name="React" value={50} label="Hacker" align="right" bg="warning600" />
+                            <SkillBar name="IoT" value={90} label="Expert" align="right" bg="warning600" />
+                            <SkillBar name="Electronics" value={70} label="Proficient" align="right" bg="warning600" />
+                            <SkillBar name="AWS" value={50} label="Generalist" align="right" bg="warning600" />
+                            <SkillBar name="Squirrel" value={70} label="Proficient" align="right" bg="warning600" />
                             <SkillBar name="Python" value={50} label="Hacker" align="right" bg="warning600" />
                             <SkillBar name="SQL" value={60} label="Good enough" align="right" bg="warning600" />
 
@@ -130,8 +132,8 @@ class App extends React.Component {
                             </Text>
 
                             <SkillBar name="MVP Thinking" value={100} label="I love reducing scope" bg="success600" />
-                            <SkillBar name="Team Organization" value={80} label="Proficient" bg="success600" />
-                            <SkillBar name="501c3 Structure" value={75} label="Proficient" bg="success600" />
+                            <SkillBar name="Strategic Planning" value={80} label="Proficient" bg="success600" />
+                            <SkillBar name="501c3 Operation" value={75} label="Proficient" bg="success600" />
                             <SkillBar name="Spanish" value={65} label="Competente" bg="success600" />
 
                             <Text
@@ -149,9 +151,12 @@ class App extends React.Component {
                             <SkillBar name="Guitar" value={90} label="Proficient" bg="info600" />
                             <SkillBar name="Piano" value={40} label="Proficient" bg="info600" />
                             <SkillBar name="Charango" value={15} label="Learning" bg="info600" />
+                            <SkillBar name="Cello" value={40} label="Learning" bg="info600" />
+                            <SkillBar name="Solar Power" value={80} label="Proficient" bg="info600" />
                             <SkillBar name="Audio Production" value={70} label="Proficient" bg="info600" />
                             <SkillBar name="Woodworking" value={30} label="Hobbiest" bg="info600" />
-                            <SkillBar name="Water Systems" value={45} label="I have great teachers" bg="info600" />
+                            <SkillBar name="Water Systems" value={45} label="Volunteer" bg="info600" />
+                            <SkillBar name="Electronics" value={85} label="Proficient" bg="info600" />
 
                         </Col>
                     </Row>
